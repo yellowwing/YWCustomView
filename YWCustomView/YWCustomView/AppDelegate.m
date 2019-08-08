@@ -8,19 +8,31 @@
 
 #import "AppDelegate.h"
 
+#import "YWHomeController.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-#warning - 先搞git
-#warning - 不要storyboard、创建pch
-#warning - 做menu的controller
-#warning - 把customView拉进来引用
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    YWHomeController *vc= [[YWHomeController alloc] initWithNibName:@"YWHomeController" bundle:nil];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window.rootViewController=vc;
+    
+    [self.window makeKeyAndVisible];
+    
+    
+    
+    
+    
     return YES;
 }
 
