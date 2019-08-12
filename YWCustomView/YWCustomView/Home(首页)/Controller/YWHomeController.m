@@ -64,12 +64,7 @@
 @end
 
 @implementation YWHomeController
-
-
-
-#warning - 发去github、写简书、宣传
-
-
+ 
 
 -(NSMutableArray*)menuArray{
     if (_menuArray == nil) {
