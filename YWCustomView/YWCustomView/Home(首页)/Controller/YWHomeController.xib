@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWHomeController">
             <connections>
+                <outlet property="addMenuBtn" destination="Vbe-2D-BJV" id="et8-5T-aZW"/>
+                <outlet property="menuBgView" destination="hsg-Ts-hnJ" id="bkQ-yA-e6E"/>
+                <outlet property="menuCollectionView" destination="XSe-R4-68f" id="4Ar-ay-Uso"/>
+                <outlet property="navBar" destination="hQM-lK-C5Z" id="3zP-W8-G6h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,6 +43,10 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                             <cells/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="LFs-e8-g8L"/>
+                                <outlet property="delegate" destination="-1" id="RLW-Uo-bH7"/>
+                            </connections>
                         </collectionView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AuR-Cl-rAG">
                             <rect key="frame" x="335" y="0.0" width="40" height="40"/>
@@ -46,6 +54,9 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbe-2D-BJV">
                                     <rect key="frame" x="0.0" y="0.0" width="40" height="39"/>
                                     <state key="normal" image="icon_32"/>
+                                    <connections>
+                                        <action selector="addMenuClick" destination="-1" eventType="touchUpInside" id="Get-dY-XYp"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="custom" id="gTV-IL-0wX" customClass="YWCustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="187" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="187" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrQ-Kb-uZC">
+                        <rect key="frame" x="5" y="15" width="177" height="123"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-Xr-cUd">
+                        <rect key="frame" x="0.0" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1Tz-re-lsT"/>
+                            <constraint firstAttribute="width" constant="20" id="ayA-xC-vF6"/>
+                        </constraints>
+                        <state key="normal" image="删除语音2"/>
+                        <connections>
+                            <action selector="deleteClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="mTp-4G-tT8"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DrQ-Kb-uZC" secondAttribute="bottom" constant="15" id="26q-G7-QiP"/>
+                <constraint firstAttribute="trailing" secondItem="DrQ-Kb-uZC" secondAttribute="trailing" constant="5" id="2IH-do-ZY4"/>
+                <constraint firstItem="B9e-Xr-cUd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vot-3a-EXZ"/>
+                <constraint firstItem="B9e-Xr-cUd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="fq2-zD-wmO"/>
+                <constraint firstItem="DrQ-Kb-uZC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="gEd-As-NYS"/>
+                <constraint firstItem="DrQ-Kb-uZC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="w3P-dV-YGl"/>
+            </constraints>
+            <size key="customSize" width="187" height="153"/>
+            <connections>
+                <outlet property="customLabel" destination="DrQ-Kb-uZC" id="9yl-TZ-7t9"/>
+                <outlet property="deleteBtn" destination="B9e-Xr-cUd" id="ySW-gr-aR2"/>
+            </connections>
+            <point key="canvasLocation" x="127.5" y="2.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="删除语音2" width="12.5" height="12.5"/>
+    </resources>
+</document>

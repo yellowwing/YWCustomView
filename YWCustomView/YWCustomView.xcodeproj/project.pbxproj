@@ -223,11 +223,11 @@
 			isa = PBXGroup;
 			children = (
 				FD67C13022FC1C6B00A56FD4 /* CustomHeaderView.h */,
-				FD67C13122FC1C6B00A56FD4 /* YWCustomView.m */,
-				FD67C13222FC1C6B00A56FD4 /* CustomHeaderView.xib */,
 				FD67C13322FC1C6B00A56FD4 /* CustomHeaderView.m */,
-				FD67C13422FC1C6B00A56FD4 /* YWCustomView.xib */,
+				FD67C13222FC1C6B00A56FD4 /* CustomHeaderView.xib */,
 				FD67C13522FC1C6B00A56FD4 /* YWCustomView.h */,
+				FD67C13122FC1C6B00A56FD4 /* YWCustomView.m */,
+				FD67C13422FC1C6B00A56FD4 /* YWCustomView.xib */,
 			);
 			path = "栏目定制";
 			sourceTree = "<group>";
@@ -235,12 +235,12 @@
 		FD67C13622FC1C6B00A56FD4 /* 栏目Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FD67C13722FC1C6B00A56FD4 /* YWMenuCell.xib */,
-				FD67C13822FC1C6B00A56FD4 /* YWCustomCell.m */,
 				FD67C13922FC1C6B00A56FD4 /* YWMenuCell.h */,
-				FD67C13A22FC1C6B00A56FD4 /* YWCustomCell.xib */,
 				FD67C13B22FC1C6B00A56FD4 /* YWMenuCell.m */,
+				FD67C13722FC1C6B00A56FD4 /* YWMenuCell.xib */,
 				FD67C13C22FC1C6B00A56FD4 /* YWCustomCell.h */,
+				FD67C13822FC1C6B00A56FD4 /* YWCustomCell.m */,
+				FD67C13A22FC1C6B00A56FD4 /* YWCustomCell.xib */,
 			);
 			path = "栏目Cell";
 			sourceTree = "<group>";
